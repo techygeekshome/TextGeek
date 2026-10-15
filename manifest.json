@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "TextGeek: Copy Text from Images",
+  "short_name": "TextGeek",
+  "version": "1.0.0",
+  "description": "Drag a box over any picture, video or screenshot and copy the text in it. OCR runs on your computer. Free, private, no tracking.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "contextMenus",
+    "clipboardWrite",
+    "storage",
+    "offscreen"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "TextGeek: drag a box over text to copy it",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+O"
+      },
+      "description": "Drag a box over text to copy it"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "homepage_url": "https://techygeekshome.info/browser-extensions/textgeek/",
+  "minimum_chrome_version": "116"
+}

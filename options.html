@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>TextGeek options</title><link rel="stylesheet" href="page.css"></head>
+<body>
+<header><img src="icons/icon48.png" alt=""><div><h1>TextGeek</h1><div class="sub">Copy text from pictures, videos and screenshots</div></div></header>
+<main>
+  <div class="card">
+    <h2>How to use it</h2>
+    <p>Click the TextGeek button, or press <kbd id="key">Alt+Shift+O</kbd>, then drag a box around any text you can see on the page. The text is copied straight away and shown in a small panel where you can fix it up and copy it again.</p>
+    <p>You can also right-click a picture and choose <b>Copy text from image</b>.</p>
+    <p class="muted" id="keyhelp">To change the shortcut, open <span id="keypage">your browser's extension shortcuts page</span>.</p>
+  </div>
+  <div class="card">
+    <h2>Settings <span class="saved" id="saved" hidden>Saved</span></h2>
+    <div class="row"><input type="checkbox" id="autoCopy"><label for="autoCopy">Copy the text as soon as it is read<br><span class="muted">Turn off to only show it in the panel.</span></label></div>
+    <div class="row"><input type="checkbox" id="keepLines"><label for="keepLines">Keep line breaks<br><span class="muted">Turn off to join each paragraph into one line, which is handy for pasting into a document.</span></label></div>
+  </div>
+  <div class="card">
+    <h2>Private by design</h2>
+    <p class="muted">The text is read on your own computer by the Tesseract engine built into TextGeek. Pictures and text are never sent anywhere, there is no account and no tracking. TextGeek only looks at a tab when you click its button, press its shortcut or use its right-click menu.</p>
+    <p class="muted">TextGeek reads English. Other languages are not included yet.</p>
+    <p class="muted"><a href="https://techygeekshome.info/browser-extensions/textgeek/" target="_blank" rel="noopener">TextGeek help and updates</a> from TechyGeeksHome. Free and open source (GPL-3.0).</p>
+  </div>
+</main>
+<script src="options.js"></script>
+</body></html>

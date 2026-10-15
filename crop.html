@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>TextGeek: pick the text</title><link rel="stylesheet" href="page.css"></head>
+<body>
+<header><img src="icons/icon48.png" alt=""><div><h1>TextGeek</h1><div class="sub">This page can't show the selection box, so here is a picture of it. Drag a box around the text you want.</div></div></header>
+<main class="wide">
+  <div class="toolbar"><span class="muted grow" id="hint">Drag a box over the picture below.</span><button id="all">Read the whole picture</button></div>
+  <div class="stage" id="stage"><img id="shot" alt="Screenshot of the page"><div class="sel" id="sel"></div></div>
+  <p id="gone" class="card" hidden>That screenshot has gone. Go back to the page and click the TextGeek button again.</p>
+  <div class="card result" id="result" hidden>
+    <textarea id="text" spellcheck="false" aria-label="Text found"></textarea>
+    <div class="foot"><span class="status grow" id="status" aria-live="polite"></span><button class="primary" id="copy">Copy</button></div>
+  </div>
+</main>
+<script src="crop.js"></script>
+</body></html>
